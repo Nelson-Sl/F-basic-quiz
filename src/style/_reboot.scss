@@ -11,7 +11,6 @@ body {
   color: $color-base;
   background-color: $body-bg;
   line-height: $line-height-base;
-  height: 100vh;
 }
 
 * {
@@ -35,9 +34,11 @@ a {
 
 main {
   @include flex-settings(flex-start, center);
-  flex-basis: 85%;
+  flex: 1;
   background-color: $white;
+  margin-top: 80px;
   margin-bottom: 30px;
+  height: 30%;
   width: 90%;
   padding: $main-padding;
 }

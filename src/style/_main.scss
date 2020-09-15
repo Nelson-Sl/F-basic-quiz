@@ -1,11 +1,10 @@
 .resume-img {
+  position: absolute;
+  top: 10px;
   img {
     width: $image-size;
     height: $image-size;
     border-radius: 50%;
-    position: absolute;
-    left: 47%;
-    top: 5%;
   }
 }
 
