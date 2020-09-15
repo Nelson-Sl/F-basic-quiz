@@ -1,3 +1,14 @@
+.resume-img {
+  img {
+    width: $image-size;
+    height: $image-size;
+    border-radius: 50%;
+    position: absolute;
+    left: 47%;
+    top: 5%;
+  }
+}
+
 .resume-title {
   @extend .main-item;
   @include flex-settings(center, center);
