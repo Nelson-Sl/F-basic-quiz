@@ -1,11 +1,18 @@
 import "./style/index.scss";
 import $ from "jquery";
-import { user } from "./js/fetchData";
-
-console.log(user);
+import { userUrl } from "./js/fetchAddress";
 
 $(function () {
-  $("img").attr("src", user.info.avatar);
-  $(".resume-author").text(user.info.name);
-  $(".resume-author-age").text(user.info.age);
+  fetch(userUrl)
+    .then((response) => response.json())
+    .then((data) => {
+      // user.education = data;
+      $("img").attr("src", data.avatar);
+      $(".resume-author").text(data.name);
+      $(".resume-author-age").text(data.age);
+      $(".about-me-content").text(data.description);
+    })
+    .catch((error) => {
+      console.log(error);
+    });
 });
