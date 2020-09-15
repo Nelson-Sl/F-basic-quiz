@@ -22,7 +22,7 @@
 .resume-split-line {
   @extend .main-item;
   width: 100%;
-  border: 1px solid $body-bg;
+  border: 1px solid $gray-light;
 }
 
 .about-me {
@@ -43,6 +43,21 @@
     &-item {
       display: flex;
       justify-content: flex-start;
+      margin-bottom: 10px;
+    }
+
+    &-year {
+      flex-basis: 15%;
+    }
+
+    &-titDesc {
+      @extend .main-item;
+      background-color: $gray-light;
+      padding: 10px;
+    }
+
+    &-title {
+      font-weight: bold;
     }
   }
 }
