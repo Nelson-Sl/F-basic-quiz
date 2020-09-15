@@ -2,6 +2,10 @@
   @extend .main-item;
   @include flex-settings(center, center);
   text-align: center;
+
+  h1 {
+    font-size: 32px;
+  }
 }
 
 .resume-split-line {
