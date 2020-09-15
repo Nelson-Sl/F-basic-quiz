@@ -38,4 +38,11 @@
   &-title {
     @include title-color-settings($primary-color);
   }
+
+  &-content {
+    &-item {
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
 }
