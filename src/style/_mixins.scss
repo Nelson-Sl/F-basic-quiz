@@ -1,0 +1,10 @@
+@mixin flex-settings($justify-content, $align-items) {
+  display: flex;
+  align-items: $align-items;
+  flex-direction: column;
+  justify-content: $justify-content;
+}
+
+@mixin title-color-settings($color) {
+  color: $color;
+}

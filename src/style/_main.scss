@@ -1,0 +1,26 @@
+.resume-title {
+  @extend .main-item;
+  @include flex-settings(center, center);
+  text-align: center;
+}
+
+.resume-split-line {
+  @extend .main-item;
+  width: 100%;
+  border: 1px solid $body-bg;
+}
+
+.about-me {
+  @extend .main-item;
+  @include flex-settings(center, flex-start);
+  &-title {
+    @include title-color-settings($primary-color);
+  }
+}
+
+.education {
+  @extend .main-item;
+  &-title {
+    @include title-color-settings($primary-color);
+  }
+}
