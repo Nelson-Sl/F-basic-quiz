@@ -1,3 +1,4 @@
+// TODO feedback: 没必要的嵌套
 .resume-img {
   img {
     width: $image-size;
@@ -25,6 +26,7 @@
   border: 1px solid $body-bg;
 }
 
+// TODO feedback: .about-me和.education有重复
 .about-me {
   @extend .main-item;
   @include flex-settings(center, flex-start);

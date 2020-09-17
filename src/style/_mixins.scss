@@ -1,3 +1,4 @@
+// TODO feedback: mixin的命名都不够表意，建议从功能角度出发命名
 @mixin flex-settings($justify-content, $align-items) {
   display: flex;
   align-items: $align-items;
